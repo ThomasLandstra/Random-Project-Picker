@@ -92,7 +92,7 @@ class newSave:
         self.data.update(data)  # Add data to local copy
         if self.extention in jsonType:
             with open(self.saveFile, "w") as write:
-                write.write(str(data))
+                write.write(str(self.data))
 
     def removeData(self, data:dict):
         removeList = []
